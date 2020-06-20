@@ -7,6 +7,9 @@ function App() {
     <div className="App">
       <header className="App-header">        
         <p>
+          Animesh Dwivedi says: Its just basic, but its helpfull
+        </p>
+        <p>
           React Playground with hooks and stuff. Slowly Redux will be added and it will be fun. Click below to enjoy.
         </p>
         <div>
