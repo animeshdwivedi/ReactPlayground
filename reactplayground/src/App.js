@@ -1,18 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import InputElementUseState from './InputElementUseState';
+import InputElementClass from './InputElementClass';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <header className="App-header">        
         <p>
-          React Playground with hooks and stuff. Slowly Redux will be added and it will be fun. Click below to enjoy.
+          Animesh Dwivedi says: Its just basic, but its helpfull.
         </p>
-        <a href=" " onClick={() => {alert("In Progress")}}>
-          In Progress
-        </a>
+        <p>
+          React Playground with hooks and stuff.
+        </p>
+        <div>          
+          <p>Below is an example of useState hook</p>
+          <InputElementUseState />
+          <p>Below is the equivalent Class Component</p>
+          <InputElementClass />
+        </div>        
+        
       </header>
     </div>
   );
