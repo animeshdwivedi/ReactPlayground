@@ -1,20 +1,23 @@
 import React from 'react';
 import './App.css';
-import InputElement from './InputElement';
+import InputElementUseState from './InputElementUseState';
+import InputElementClass from './InputElementClass';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">        
         <p>
-          Animesh Dwivedi says: Its just basic, but its helpfull
+          Animesh Dwivedi says: Its just basic, but its helpfull.
         </p>
         <p>
-          React Playground with hooks and stuff. Slowly Redux will be added and it will be fun. Click below to enjoy.
+          React Playground with hooks and stuff.
         </p>
-        <div>
+        <div>          
           <p>Below is an example of useState hook</p>
-          <InputElement />
+          <InputElementUseState />
+          <p>Below is the equivalent Class Component</p>
+          <InputElementClass />
         </div>        
         
       </header>
