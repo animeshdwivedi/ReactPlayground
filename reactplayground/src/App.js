@@ -8,15 +8,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          React Playground with hooks and stuff. Slowly Redux will be added and it will be fun. Click below to enjoy.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+        <a href=" " onClick={() => {alert("In Progress")}}>
+          In Progress
         </a>
       </header>
     </div>
