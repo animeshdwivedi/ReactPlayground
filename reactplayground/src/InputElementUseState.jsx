@@ -5,11 +5,17 @@ import React, { useState } from 'react';
 const InputElementUseState = () => {
     const [inputText, setInputText] = useState("");
     const [inputListText, setInputList] = useState([]);
-    const [showComponent, onButtonClick] = useState(false);
+    const [showComponent, onButtonClick] = useState({ inputText: "", inputListText: [] }, false);
+    //Clearing state is little tricky for statefull functional components. 
+    const clearState = (showComponent) => {
+        setInputList([]);
+        setInputText("");
+        onButtonClick(showComponent)
+    };
     let buttonText = showComponent ? "Hide Component" : "Show Component";
     return (
         <div>
-            <button type="primary" className="btn btn-primary" style={{ "marginBottom": "10px" }} onClick={() => { onButtonClick(!showComponent) }}>{buttonText}</button>
+            <button type="primary" className="btn btn-primary" style={{ "marginBottom": "10px" }} onClick={() => { clearState(!showComponent) }}>{buttonText}</button>
             {showComponent &&
                 <div>
                     <input onChange={(e) => {
@@ -31,7 +37,7 @@ const InputElementUseState = () => {
                         </div>
                     </div>
                 </div>
-            }            
+            }
             <p>What you learned: useState() allows you to manipulate the state of a react functional component just like setState function</p>
             <hr /><br />
         </div>

@@ -26,7 +26,9 @@ class InputElementClass extends Component {
     onButtonClick() {
         let { showComponent } = this.state;
         this.setState({
-            showComponent: !showComponent
+            showComponent: !showComponent,
+            inputText: "",
+            inputListText: []
         });
     }
 
@@ -36,7 +38,7 @@ class InputElementClass extends Component {
         let buttonText = showComponent ? "Hide Component" : "Show Component";
         return (
             <div>
-                <button type="button" style={{"marginBottom": "10px"}} className="btn btn-primary" onClick={(e) => { this.onButtonClick(e.target.value) }}>{buttonText}</button>
+                <button type="button" style={{ "marginBottom": "10px" }} className="btn btn-primary" onClick={(e) => { this.onButtonClick() }}>{buttonText}</button>
                 {showComponent &&
                     <div>
                         <input onChange={(e) => {
@@ -57,7 +59,7 @@ class InputElementClass extends Component {
                             </div>
                         </div>
                     </div>
-                }                
+                }
                 <p>What you learned: class components add more code for the same thing and may complicate the components</p>
                 <hr /><br />
             </div>
