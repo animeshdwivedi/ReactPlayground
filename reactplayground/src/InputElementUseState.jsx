@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 const InputElementUseState = () => {
     const [inputText, setInputText] = useState("");
     const [inputListText, setInputList] = useState([]);
-    const [showComponent, onButtonClick] = useState({ inputText: "", inputListText: [] }, false);
+    const [showComponent, onButtonClick] = useState(false);
     //Clearing state is little tricky for statefull functional components. 
     const clearState = (showComponent) => {
         setInputList([]);
