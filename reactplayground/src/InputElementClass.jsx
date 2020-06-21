@@ -38,7 +38,7 @@ class InputElementClass extends Component {
         let buttonText = showComponent ? "Hide Component" : "Show Component";
         return (
             <div>
-                <button type="button" style={{ "marginBottom": "10px" }} className="btn btn-primary" onClick={(e) => { this.onButtonClick(e.target.value) }}>{buttonText}</button>
+                <button type="button" style={{ "marginBottom": "10px" }} className="btn btn-primary" onClick={(e) => { this.onButtonClick() }}>{buttonText}</button>
                 {showComponent &&
                     <div>
                         <input onChange={(e) => {
