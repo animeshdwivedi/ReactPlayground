@@ -3,7 +3,7 @@ import imageBW from './imageBW.jpg'
 import imageColored from './imageColored.jpg'
 
 
-class ImageClassToggle extends Component {
+class ImageClassToggle extends ImageClassToggle {
     constructor(props) {
         super(props);
         this.state = {
