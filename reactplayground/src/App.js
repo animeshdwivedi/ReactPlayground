@@ -31,7 +31,7 @@ function App() {
           <p>Below is an example of refs with class component</p>
           <ImageElementClass />
         </div>
-
+        <p>What you learned: useState() allows you to manipulate the state of a react functional component just like setState function</p>
       </div>
     </div>
   );

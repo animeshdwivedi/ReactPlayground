@@ -38,7 +38,6 @@ const InputElementUseState = () => {
                     </div>
                 </div>
             }
-            <p>What you learned: useState() allows you to manipulate the state of a react functional component just like setState function</p>
             <hr /><br />
         </div>
     );
