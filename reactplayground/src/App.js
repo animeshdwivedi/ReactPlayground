@@ -3,6 +3,7 @@ import './App.css';
 import InputElementUseState from './InputElementUseState';
 import InputElementClass from './InputElementClass';
 import ImageElementUseRef from './ImageElementUseRef';
+import ImageElementClass from './ImageElementUseRef';
 import 'bootstrap';
 
 
@@ -19,12 +20,16 @@ function App() {
           React Playground with hooks and stuff.
           </p>
         <div>
+          <h5 className="mt-0">Input and useState</h5>
           <p>Below is an example of useState hook</p>
           <InputElementUseState />
           <p>Below is the equivalent Class Component</p>
           <InputElementClass />
+          <h5 className="mt-0">Images and Refs</h5>
           <p>Below is an example of useRef hook</p>
           <ImageElementUseRef />
+          <p>Below is an example of refs with class component</p>
+          <ImageElementClass />
         </div>
 
       </div>
